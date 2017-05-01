@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
 
 module.exports = {
-    'url':'mongodb://127.0.0.1:27017/nodeDB' // mongodb connection string 
+    'url': 'mongodb://root:0728934649@ds127531.mlab.com:27531/nodedb' // mongodb connection string 
 };

@@ -17,7 +17,7 @@ require('../app/Controllers/passport');
 // });
 
 
-router.route('/home')
+router.route('/')
 
 	.get(function(req, res, next){
 		res.render('home');
