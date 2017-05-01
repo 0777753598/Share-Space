@@ -1,0 +1,79 @@
+*	{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: raleway;
+    clear: none;
+    /*position: relative;*/
+}
+
+/*.header	{*/
+    /*min-height: 50px;*/
+    /*background: black;*/
+    /*padding: 10px;*/
+/*}*/
+
+.container	{
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.image-text  {
+    width:100%;
+    position: absolute;
+    top:30%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    mso-ascii-font-family: Raleway thin;
+    color: white;
+
+}
+.main_text	{
+    font-family: "Raleway Light";
+    font-size: 40px;
+    font-weight:100;
+    margin-bottom: 20px;
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background.jpg') no-repeat fixed center;
+    background-size: cover;
+    z-index: 3;
+    margin-bottom: 10px;
+}
+
+.news {
+    width: 100%;
+    /*padding: 10px;*/
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    outline: none;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+.news .title    {
+    padding:10px;
+    background: #395cdc;
+    /*-webkit-box-shadow: inset 1px -1px 5px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: inset 1px -1px 5px rgba(0,0,0,0.5);*/
+    /*box-shadow: inset 1px -2px 8px rgba(0,0,0,0.5);*/
+}
+
+.news .para {
+    width:100%;
+    padding:5px;
+    clear: both;
+    overflow: visible;
+    position: relative;
+}
+

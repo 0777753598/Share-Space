@@ -1,0 +1,21 @@
+
+<div class="image-container">
+    <div class="container">
+    
+
+    <div class="user-form">
+       
+    <h1><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Login</h1>
+         {{# if message}}
+        <div class="error">{{message}}</div>
+        {{/if}}
+	<form action="" method="POST">
+		<input type="text" name="email" placeholder="Enter email.." required >
+		<input type="password" name="password" placeholder="Enter password.." required minlength=8>
+		<input type="submit" name="submit" value="Login">
+	</form>
+    
+   </div> 
+</div>
+</div>
+

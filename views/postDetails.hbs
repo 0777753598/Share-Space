@@ -1,0 +1,117 @@
+<!--<link rel="stylesheet" type="text/css" href="stylesheets/placeStyle.css">-->
+
+
+<!--user post details about places ti be rented
+    this is the form to post the details-->
+
+
+<div class="container">
+    <div class="col-12">
+
+        {{# if success}}
+            <div class="success">
+                <p>"Successfully submit the details!"</p>
+            </div>
+        {{else}}
+
+            <!--       if there are errors show them all-->
+            {{# if errors}}
+                <div class="errors">
+                    <ul>
+                        {{# each errors}}
+                            <li>{{this.msg}}</li>
+                        {{/each}}
+
+                    </ul>
+                </div>
+            {{/if}}
+        {{/if}}
+    </div>
+    <div class="title">
+        <h1>Here you can post your details</h1>
+    </div>
+    <div class="col-12">
+        <form class="col-1-of col-10 form" method="post" action="">
+            <h3>Address</h3>
+            <hr>
+            <div class="row">
+
+                <div class="col-4 padding">
+                    <label>No:</label>
+                    <input type="text" name="number" placeholder="Enter the number..">
+                </div>
+                <div class="col-4 padding">
+                    <label>Street:</label>
+                    <input type="text" name="street" placeholder="Enter the street..">
+                </div>
+                <div class="col-4 padding">
+                    <label>City:</label>
+                    <input type="text" name="city" placeholder="Enter the city..">
+                </div>
+
+            </div>
+            <hr>
+            <h3>Location</h3>
+            <hr>
+            <div class="col-12">
+
+                <div class="col-4">
+                    <label>Longatiude:</label>
+                    <input type="text" name="lng" placeholder="Longertude here.." readonly>
+                </div>
+                <div class="col-4">
+                    <label>Latitude:</label>
+                    <input type="text" name="lat" placeholder="Latitude here.." readonly>
+                </div>
+                <div class="col-4">
+                    <p>*This is important!! You dont need to fill the locations(Laitiudes and longertude). Mark your
+                        place on the map below. Applicarion will automatically take the location.</p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="col-12">
+                <div class="col-4">
+                    <label>Capacity:</label>
+                    <input type="text" name="capacity" placeholder="Capacity here..">
+                </div>
+                <div class="col-4">
+                    <label>Price:</label>
+                    <input type="text" name="price" placeholder="Price here..">
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="col-12">
+                <div class="col-12">
+                    <label>Other Description:</label>
+                    <textarea name="description" placeholder="Enter Your Description"></textarea>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="col-10">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<!--loaidng the google map -->
+<div class="container">
+    <div class="map-container">
+        <input type="text" name="search" class="search" placeholder="Search box...">
+        <div id="googleMap" style="width:80%;height:500px;"></div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="javascripts/map.js"></script>
+
+
+<!--google map api -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeMvXxXXFeLfnglTN8CQ6OvAG_3ZA1gUk&libraries=places&callback=initMap"></script>

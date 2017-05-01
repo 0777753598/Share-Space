@@ -1,0 +1,145 @@
+[class*=col-]	{
+	padding: 10px;
+	float: none;
+    width: 100%;
+}
+
+@media only screen and  (min-width:768px){
+    [class*=col-]	{
+        padding: 10px;
+        float: left;
+    }
+    
+    .col-12 {
+      width: 100%;
+    }
+    .col-11 {
+      width: 91.66666667%;
+    }
+    .col-10 {
+      width: 83.33333333%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-8 {
+      width: 66.66666667%;
+    }
+    .col-7 {
+      width: 58.33333333%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-5 {
+      width: 41.66666667%;
+    }
+    .col-4 {
+      width: 33.33333333%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-2 {
+      width: 16.66666667%;
+    }
+    .col-1 {
+      width: 8.33333333%;
+    }
+
+    .row   {
+      width: 100%;
+      padding: 10px;	
+      display: inline-flex;
+      /*float: none;*/
+    }
+
+    .form input{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #c4c4c4;
+        outline: none;
+        font-size: 15px;
+        transition: ease 0.2s;
+    }
+    
+    .form input[type='submit']{
+        padding: 10px 0;
+        font-size: 17px;
+        background: rgba(30, 30, 227, 0.79);
+        margin: 0 auto;
+    }
+    
+    .form input:hover     {
+        box-shadow: 0 0 2px 0 blue;
+    }
+
+    .title{
+        padding: 10px;
+        background: rgba(100,100,100,0.5);
+    }
+
+    .form	{
+        padding: 10px;
+        margin: 0 auto;
+        background: #e4e4e4;
+        border-radius: 0;
+        font-family: raleway;
+        -webkit-box-shadow:1px 1px 10px rgba(0,0,0,0.5);
+        -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.5) ;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.5) ;
+
+
+    }
+
+    [class*=col-]	{
+        padding: 10px;
+        float: none;
+    }
+
+    hr	{
+        color: #fff9;
+    }
+
+    form p {
+        font-size: 12px;
+        font-family: arial;
+    }
+    .form textarea{
+        width: 100%;
+        min-height: 100px;
+        border: 1px solid #c4c4c4;
+        resize: none;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 15px;
+    }
+    
+    .success    {
+        width: 100%;
+        padding: 10px 20px;
+        background: rgba(38, 118, 38, 0.84);
+    }
+    
+    .errors {
+        width: 100%;
+        padding: 10px 20px;
+        background: rgba(249, 51, 51, 0.79);
+    }
+    
+    .errors ul li {
+        list-style: disc;
+    }
+    
+    .placeDetails   {
+        width: 80%;
+        padding: 20px;
+        margin: 20px auto;
+        background: rgba(0, 0, 221, 0.51);
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.87);
+        
+    }
+}

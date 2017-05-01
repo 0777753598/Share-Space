@@ -1,0 +1,67 @@
+/*-----------------------navigation bar style-----------------*/
+.nav li a:hover {
+    background: black;
+}
+
+
+.header {
+    min-height: 60px;
+    background:rgba(36,36,36,0.89);
+}
+
+.headerTitle	{
+    float: left;
+    color: white;
+    line-height: 60px;
+    font-size: 25px;
+}
+
+.headerTitle h3	{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.share {
+    font-family: arial;
+}
+
+.nav {
+    float: left;
+    margin-left: 20px;
+}
+
+.nav li {
+    float: left;
+    display: block;
+    position: relative;
+    line-height: 60px;
+    border-right: 1px solid rgba(132, 131, 131, 0.65);
+}
+
+.nav li:first-child{
+    border-left: 1px solid rgba(132, 131, 131, 0.65);
+}
+
+.nav li a {
+    color: white;
+    padding: 20px 15px;
+}
+
+.log_nav	{
+    float: right;
+}
+
+.log_nav li {
+    float: left;
+    display: block;
+    position: relative;
+    line-height: 60px;
+}
+.log_nav li a {
+    color: white;
+    padding: 20px 12px;
+}
+
+.active {
+    background: black;
+}

@@ -1,0 +1,222 @@
+
+@media only screen and  (min-width:768px){
+    *	{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+			font-family: raleway;
+		}
+		body	{
+			margin: 0;
+			padding: 0;
+			line-height: 1.42857143;
+		}
+
+		li a {
+			transition: ease 0.2s;
+		}
+
+		li a:hover {
+			background: black;
+		}
+
+
+        .header {
+			min-height: 60px;
+			background: #454545;
+		}
+
+		/*.container	{*/
+			/*padding-left: 40px;*/
+			/*padding-right: 40px;*/
+			/*margin: 0 auto;*/
+			/*width: 	100%;*/
+			/*float: left;	*/
+			/*position: relative;	*/
+
+		/*}*/
+        .container	{
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
+		.headerTitle	{
+			float: left;
+			color: white;
+			line-height: 60px;
+			font-size: 25px;
+		}
+
+		.headerTitle h3	{
+			font-family: 'Josefin Sans', sans-serif;
+			font-weight: 400;
+		}
+
+		.share {
+			font-family: arial;
+		}
+
+		.nav {
+			float: left;
+			margin-left: 20px;
+		}
+
+		.nav li {
+			float: left;
+			display: block;
+			position: relative;
+			line-height: 60px;
+            border-right: 1px solid rgba(132, 131, 131, 0.65);
+		}
+    
+        .nav li:first-child{
+            border-left: 1px solid rgba(132, 131, 131, 0.65); 
+        }
+
+		.nav li a {
+			color: white;
+			padding: 20px 15px;
+		}
+
+		.log_nav	{
+			float: right;
+		}
+
+		.log_nav li {
+			float: left;
+			display: block;
+			position: relative;
+			line-height: 60px;
+		}
+		.log_nav li a {
+			color: white;
+			padding: 20px 12px;
+		}
+
+		.active {
+			background: black;
+		}
+
+		/*.wrapper {*/
+			/*min-height: 400px;*/
+			/*padding: 15px;*/
+			/*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/map.png');*/
+			/*margin: 10px;*/
+			/*text-align: center;*/
+		/*}*/
+        .image-container{
+            position: relative;
+            width: 100%;
+            height: 500px;
+            /*background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(background.jpg) no-repeat fixed center;*/
+            background-size:cover;
+            z-index: 3;
+            margin-bottom: 20px;
+        }
+
+		/*.wrapper h1	{*/
+			/*color: white;*/
+            /*font-size: 40px;*/
+			/*font-weight: 400;*/
+            /*margin-bottom: 50px;*/
+            /*margin-top: 30px;*/
+		/*}*/
+    .login_buttons  {
+        margin: 50px auto;
+        
+    }
+        
+    .login_buttons a {
+        padding: 10px;
+        background: green;
+        color: aqua;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .login_buttons a:hover  {
+        background: darkgreen;
+    }
+    
+    .sign_up {
+        width: 700px;
+        padding: 20px;
+        margin: 50px auto 0 auto;
+        position: relative;
+        border: 1px solid rgba(56, 93, 219, 0.71);
+        border-radius: 10px;
+
+    }
+
+    .sign_up h1 {
+        font-weight: 400;
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .sign_up form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .sign_up form input    {
+        width: 100%;
+        padding: 10px 10px 10px 0;
+        text-indent: 10px;
+        margin: 10px;
+        outline: none;
+        border: 1px solid rgba(199, 177, 177, 0.79);
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .sign_up form input[type="submit"]  {
+        width: 40%;
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+    .sign_up form input:hover   {
+        box-shadow: 0 0 4px 0px blue;
+    }
+    
+    .Error_message  {
+        color: red;
+    }
+    
+    .profile_container  {
+        padding: 40px;
+        
+    }
+    
+    #googleMap    {
+        width: 100%;
+        height: 500px;;
+        padding: 5px;
+        margin: 20px auto;
+    }
+    
+    .error {
+        width: 100%;
+        padding: 10px 20px;
+        background: rgba(255, 27, 27, 0.62);
+        border-radius: 10px;
+        margin: 20px 0 0 0;
+    }
+
+}
+
+
+
+
+.footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 60px;
+    background: black;
+    bottom: 0;
+}

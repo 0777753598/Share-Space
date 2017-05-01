@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   {{>head}}
+  </head>
+  <body>
+     {{#if user}}
+        {{>user_header}}
+      {{else}}
+        {{>default_header}}
+      {{/if}}
+    {{{body}}}
+
+     {{>footer}}
+
+	  <script type="text/javascript" src="javascripts/script.js"></script>
+      
+
+  </body>
+</html>

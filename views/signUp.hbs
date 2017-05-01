@@ -1,0 +1,23 @@
+<div class="image-container">
+    <div class="container">
+        <div class="user-form">
+            <h1><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> Sign Up</h1>
+            <form method="post" action="">
+                <input type="text" name="first_name" placeholder="Enter First Name.." required forcus>
+                <input type="text" name="last_name" placeholder="Enter Last Name.." required>
+                <input type="email" name="email" placeholder="Enter Email.." required >
+                <input type="text" name="nic" placeholder="Enter NIC bumber" required>
+                <input type="password" name="password" placeholder="Enter Password.." required required minlength=8>
+                <input type="password" name="comfirm_password" placeholder="Enter Password Again.." required required minlength=8>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+            {{# if message}}
+            <div class="error-message">
+
+                   <dev><b>{{message}}</b></dev>
+
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

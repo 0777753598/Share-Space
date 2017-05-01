@@ -1,0 +1,228 @@
+
+/*style applies to all the elements*/
+*	{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* classes starts with "col-" will apply these styles */
+[class*=col-]	{
+    padding: 5px;
+    float: left;
+}
+
+/*to set width for elements*/
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+
+/*to get offsets for elements */
+
+.col-12-of {
+: 100%;
+}
+.col-11-of {
+    margin-left: 91.66666667%;
+}
+.col-10-of {
+    margin-left: 83.33333333%;
+}
+.col-9-of {
+    margin-left: 75%;
+}
+.col-8-of {
+    margin-left: 66.66666667%;
+}
+.col-7-of {
+    margin-left: 58.33333333%;
+}
+.col-6-of {
+    margin-left: 50%;
+}
+.col-5-of {
+    margin-left: 41.66666667%;
+}
+.col-4-of {
+    margin-left: 33.33333333%;
+}
+.col-3-of {
+    margin-left: 25%;
+}
+.col-2-of {
+    margin-left: 16.66666667%;
+}
+.col-1-of {
+    margin-left: 8.33333333%;
+}
+
+/*.header	{*/
+    /*background: gray;*/
+    /*line-height: 40px;*/
+/*}*/
+
+/*ul li {*/
+    /*display: inline-block;*/
+    /*padding: 0 10px;*/
+    /*border-left:1px solid;*/
+    /*font-size: 1.1em;*/
+    /*font-family:"Open Sans";*/
+/*}*/
+
+/*li a {*/
+
+/*}*/
+
+/*ul li:last-child{*/
+    /*border-right: 1px solid;*/
+/*}*/
+
+.container {
+    padding: 0 20px;
+}
+
+.container-lg-cn	{
+    padding: 0 100px;
+}
+
+.detailBox{
+    width: 100%;
+    padding: 10px;
+    background: lightcyan;
+    -webkit-box-shadow:  0 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow:  0 0 6px rgba(0,0,0,0.3);
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    margin: 10px auto;
+}
+
+.comment-ln {
+    width: 100%;
+    padding: 8px 10px 8px 0;
+    text-indent: 10px;
+    border-radius: 6px;
+    border: 1px solid lightgray
+}
+
+
+.submit-bt	{
+    padding: 8px 10px;
+    border-radius: 3px;
+    border: none;
+    /* 	border: 1px solid lightgrey; */
+    margin-top: 5px;
+    background: rgb(1, 130, 232);
+    color: whitesmoke;
+    -webkit-box-shadow: inset -1px -1px 2px rgba(10,10,10,0.3), 0 0 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset -1px -1px 2px rgba(10,10,10,0.3), 0 0 3px rgba(0,0,0,0.4);
+    box-shadow: inset -1px -1px 2px rgba(10,10,10,0.3), 0 0 3px rgba(0,0,0,0.4);
+
+}
+
+h1 {
+    display: inline-block;
+}
+
+#burguerButton	{
+    display: none;
+    float:right;
+    font-size: 25px;
+}
+
+.label-md {
+    padding: 2px;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.para-md	{
+
+    padding: 2px;
+    display: inline-block;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.placeDetails	{
+    background: rgba(0,0,0,0.1);
+    padding:10px;
+    margin-bottom: 10px;
+
+}
+
+.search-lg	{
+    padding:10px 10px 10px 0;
+    font-size:18px;
+    font-family:"Open Sans";
+    border:1px solid lightgray;
+    -webkit-box-shadow:  0 0 5px lightgray;
+    -moz-box-shadow:  0 0 5px lightgray;
+    box-shadow:  0 0 5px lightgray;
+    text-indent:10px;
+
+
+}
+
+@media screen and (max-width: 400px){
+    [class*=col-]{
+        width: 100%;
+        /*text-align: center;*/
+        padding: 4px;
+
+    }
+
+    ul	{
+        display: none;
+    }
+
+    ul li {
+        width: 100%;
+        display: block;
+        border: none;
+        text-align: left;
+        background: darkgray;
+
+    }
+
+    #burguerButton{
+        display: inline-block;
+        float: right;
+    }
+}
