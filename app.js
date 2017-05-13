@@ -13,10 +13,12 @@ var validator = require('express-validator');
 
 require('./app/Controllers/passport')(passport);
 
-var db = require('./app/Controllers/database');
+var dbControl = require('./app/Controllers/database');
 //import routes
-mongoose.connect(db.url);
-console.log(db.url);
+mongoose.connect(dbControl.url);
+var db = mongoose.connection;
+db.on('error',console.error.bind(console, "MongoDB connection error!"));
+
 var index = require('./routes/index');
 //var users = require('./routes/users');
 

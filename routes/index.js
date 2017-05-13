@@ -126,7 +126,9 @@ router.route('/postDetails')
 
 router.get('/places', function(req,res,next){
     Place.getAllPlaces(function(places){
+
         res.render('places',{places : places, user: req.user});
+
     });
     
 });
@@ -139,21 +141,34 @@ router.get('/data',function(req,res,next){
 
 router.get('/place/:id',function (req,res,next) {
     Place.getPlace(req,function (place) {
+
         res.json(place);
+
     });
 });
 
 router.get('/user/:id',function (req,res,next) {
     User.findUser(req,function (user) {
+
         res.json(user);
+
     });
 });
 
 router.get('/updatePlace',function (req,res,next) {
 
-    console.log(req.query.id+" "+req.query.text+" "+req.query.user_id);
     Place.addReview(req,function(place) {
+
         res.json(place);
+
+    });
+});
+
+router.get('/removeReview',function(req,res,next){
+    Place.removeReview(req,function(place) {
+
+        res.json(place);
+
     });
 });
 

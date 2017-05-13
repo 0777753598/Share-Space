@@ -32,7 +32,7 @@ module.exports = {
 //function to take all the places in the database    
     getAllPlaces: function(callback){
         //get all places through schema
-        place.find(function(err,places){
+        place.find({}).populate('review.postedBy').exec(function(err,places){
             if(err)
                 console.log(err);
             callback(places); // if no error occurs return places
@@ -59,6 +59,15 @@ module.exports = {
             callback(place);
         });
 
+    },
+
+    removeReview: function(req,callback){
+        place.findByIdAndUpdate(req.query.id,{ $pull:{"review" :{"_id" : req.query.comment_id }}},{ safe: true,upsert: true, new: true },function(err,place) {
+                if (err)
+                    console.log(err);
+
+                callback(place);
+            });
     }
 
 

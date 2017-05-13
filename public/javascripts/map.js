@@ -12,6 +12,8 @@ function initMap() {
     };
     
     var map=new google.maps.Map(googleMap,mapProp);
+
+
     
 // add a event listener to the map to create the marker  
     map.addListener('click', function(e){

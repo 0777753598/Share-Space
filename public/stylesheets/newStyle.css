@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*style applies to all the elements*/
 *	{
@@ -7,7 +9,7 @@
     outline: none;
     list-style: none;
     text-decoration: none;
-    font-family:Open Sans;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* classes starts with "col-" will apply these styles */
@@ -15,6 +17,8 @@
     padding: 5px;
     float: left;
 }
+
+
 
 /*to set width for elements*/
 .col-12 {
@@ -93,22 +97,6 @@
     margin-left: 8.33333333%;
 }
 
-/*ul li {*/
-    /*display: inline-block;*/
-    /*padding: 0 10px;*/
-    /*border-left:1px solid;*/
-    /*font-size: 1.1em;*/
-    /*font-family:"Open Sans";*/
-/*}*/
-
-/*li a {*/
-
-/*}*/
-
-/*ul li:last-child{*/
-    /*border-right: 1px solid;*/
-/*}*/
-
 .container {
     padding: 0 20px;
     width:100%;
@@ -135,6 +123,7 @@
     width: 100%;
     padding: 8px 10px 8px 0;
     text-indent: 10px;
+    font-size:0.9em;
     border-radius: 6px;
     border: 1px solid lightgray
 }
@@ -144,7 +133,7 @@
     padding: 8px 10px;
     border-radius: 3px;
     border: none;
-    /* 	border: 1px solid lightgrey; */
+    font-size:medium;
     margin-top: 5px;
     background: rgb(1, 130, 232);
     color: whitesmoke;
@@ -168,7 +157,7 @@ h1 {
     padding: 2px;
     display: inline-block;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
     font-family: sans-serif;
 }
 
@@ -197,7 +186,7 @@ h1 {
 .search-lg	{
     padding:10px 10px 10px 0;
     font-size:18px;
-    font-family:"Open Sans";
+    font-family: "Open Sans", sans-serif;
     border:1px solid lightgray;
     -webkit-box-shadow:  0 0 5px lightgray;
     -moz-box-shadow:  0 0 5px lightgray;
@@ -206,80 +195,23 @@ h1 {
 
 }
 
-/*-----------------------navigation bar style-----------------*/
-.nav li a:hover {
-    background: black;
+.delete{
+    position: absolute;
+    top:2px;
+    right:4px;
+    z-index: 1;
+    color: rgba(0,0,0,0.23);
+
 }
 
-.log_nav li a:hover{
-    background: black;
+.hide   {
+    display: none;
 }
 
-
-.header {
-    min-height: 60px;
-    background:rgba(36,36,36,0.89);
-}
-
-.headerTitle	{
-    float: left;
-    color: white;
-    line-height: 60px;
-    font-size: 25px;
-}
-
-.headerTitle h3	{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-}
-
-.share {
-    font-family: arial;
-}
-
-.nav {
-    float: left;
-    margin-left: 20px;
-}
-
-.nav li {
-    float: left;
-    display: block;
-    position: relative;
-    line-height: 59px;
-    border-right: 1px solid rgba(132, 131, 131, 0.65);
-}
-
-.nav li:first-child{
-    border-left: 1px solid rgba(132, 131, 131, 0.65);
-}
-
-.nav li a {
-    color: white;
-    font-size:0.9em;
-    padding: 19px 15px;
-    font-weight: 100;
-}
-
-.log_nav	{
-    float: right;
-}
-
-.log_nav li {
-    float: left;
-    display: block;
-    position: relative;
-    line-height: 59px;
-}
-.log_nav li a {
-    color: white;
-    padding: 19px 12px;
-    font-size:0.9em;
-    font-weight:100;
-}
 
 .active {
-    background: black;
+    background: #ddd;
+    color: black !important;
 }
 
 /*other styles got form the homeStyle file*/
@@ -294,13 +226,13 @@ h1 {
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     text-align: center;
-    mso-ascii-font-family: Raleway thin;
     color: white;
 
 
 }
 .main_text	{
-    font-family: "Raleway Thin";
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
     font-size: 70px;
     font-weight:100;
     margin-bottom: 20px;
@@ -344,12 +276,12 @@ h1 {
     color: white;
     font-size: 18px;
     margin:0 10px;
-    font-family: "Raleway Light";
+    font-family: "Raleway Light", serif;
     font-weight: 100;
 }
 body    {
     background: rgba(194, 194, 194, 0.2);
-    min-width:536px;
+    min-width:350px;
 
 }
 .user-form {
@@ -364,9 +296,9 @@ body    {
     text-align: center;
     font-size: 40px;
     color: white;
-    font-family: sans-serif;
+    font-weight: 300;
     margin-bottom: 20px;
-    font-family:"Raleway Thin";
+    font-family:"Raleway", sans-serif;
 }
 
 .user-form input    {
@@ -412,7 +344,7 @@ body    {
 }
 
 .news .title h3{
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight:500;
 }
 
@@ -465,6 +397,7 @@ body    {
 }
 
 .comment {
+    position: relative;
     background: lightgray;
     margin-bottom: 5px;
     padding: 5px 0 5px 5px;
@@ -478,7 +411,7 @@ body    {
     position: absolute;
     top: 10%;
     left:50%;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
     text-indent: 10px;
     font-size: 15px;
@@ -584,17 +517,48 @@ form p {
     list-style: disc;
 }
 
-/*.placeDetails   {*/
-    /*width: 80%;*/
-    /*padding: 20px;*/
-    /*margin: 20px auto;*/
-    /*background: rgba(0, 0, 221, 0.51);*/
-    /*box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.87);*/
+.loader	{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    border: 10px solid lightgray;
+    border-top: 10px solid green;
+    border-radius: 50%;
+    animation:spin 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 
-/*}*/
+}
+
+#hideAll
+{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    z-index: 99; /* Higher than anything else in the document */
+
+}
+
+@keyframes spin{
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     [class*=col-]{
         width: 100%;
         /*text-align: center;*/
@@ -676,5 +640,23 @@ form p {
         clear: both;
         overflow: visible;
         position: relative;
+    }
+    
+    .user-form {
+        left: 2px;
+        right: 2px;
+        transform: translate(0,-50%);
+    }
+
+    .submit-bt  {
+        font-size:small;
+    }
+
+    .container-lg-cn {
+        padding:0 2px;
+    }
+
+    [class*=-of]{
+        margin-left: 0;
     }
 }
